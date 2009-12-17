@@ -1,0 +1,19 @@
+* * * INSTALL SCALA * * *
+
+This program is written in Scala so you need that installed. You
+can do that on Linux (Debian/Ubuntu) or OS X by doing the following
+
+  Ubuntu (Hardy)      : apt-get install scala
+  http://packages.ubuntu.com/hardy/scala
+  
+  OS X (with Macports): sudo port install scala 
+  http://scala.darwinports.com/
+
+For Windows see http://www.scala-lang.org/node/310.
+
+* * * Run it * * * 
+
+  mvn test-compile
+  env JAVA_OPTS="-Xloggc:/var/tmp/out.gc -Xms1024m -Xmx1024m" scala -classpath \
+  target/test-classes:target/classes com.runbam.scalademo.PerformanceHarness 5000000
+
