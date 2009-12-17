@@ -13,7 +13,7 @@ For Windows see http://www.scala-lang.org/node/310.
 
 * * * Run it * * * 
 
-  mvn test-compile
+  mvn compile
   env JAVA_OPTS="-Xloggc:/var/tmp/out.gc -Xms1024m -Xmx1024m" scala -classpath \
   target/test-classes:target/classes com.runbam.scalademo.PerformanceHarness 5000000
 
